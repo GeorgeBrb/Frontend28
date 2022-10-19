@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap');
+
+
+
+
+*{
+
+
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+#app{
+    width: 80%;
+    margin: auto;
+}
+
+
+.navbar{
+   display: flex;
+   justify-content: space-between;
+}
+
+#beard{
+    width:70px ;
+    height: 70px;
+}
+
+.logo{
+    display: flex;
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    flex-direction: column;
+}
+.btn-primary{
+background-color:#009000 !important ;
+}
