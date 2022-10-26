@@ -12,10 +12,13 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #F6EFE6 !important;
 }
+
 #app{
     width: 80%;
     margin: auto;
+    
 }
 
 
@@ -37,4 +40,101 @@ body{
 }
 .btn-primary{
 background-color:#009000 !important ;
+border-color: #009000 !important;
+}
+
+.btn-dark{
+    background-color:#30231d !important  
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card-title{
+    display: flex;
+    margin: auto;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+   
+}
+.card-price{
+    display: flex;
+    margin: auto;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+}
+.btn-bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.product-img{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    margin: auto;
+    border: solid;
+    border-color: white;
+    border-radius: 50px;
+
+    
+}
+.product-details{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    margin: auto 15%;
+    padding: auto 10%;
+}
+
+.add-product-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+    border: 2px solid red;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+
+
+.admin-container .header ,
+.admin-container .add-product-header
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.add-product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.add-product-form .item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.add-product-form .item .label-item{
+    flex: 1;
+}
+
+.add-product-form .item .input-item{
+    flex: 2;
+}
+
+.add-product-form .item .input-item input{
+    width: 100%;
+
+}
+
+hidden{
+    display: none;
 }
