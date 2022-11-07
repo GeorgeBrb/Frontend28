@@ -6,7 +6,7 @@ export const createProductCard = (product) =>
   <h9 class="card-price">${product.price}</h9>
   <div class="btn-bottom">
   <a href="src/pages/details.html?id=${product.id}" class="btn btn-dark">Details</a>
-  <a href="#" class="btn btn-danger">Add to cart</a>
+  <button id=${product.id} class="btn btn-danger add-to-cart">Add to cart</button>
   </div>
 </div>
 </div>

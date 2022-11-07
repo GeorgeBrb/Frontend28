@@ -15,7 +15,8 @@ export const getProductById = async (id) =>{
   return product;
 };
 
-export const postNewProduct = async (product) =>{
+export const postNewProduct = async (product) => {
+  
   const response = await fetch (PRODUCT_URL , {
     method: "POST",
     headers: {
@@ -23,5 +24,14 @@ export const postNewProduct = async (product) =>{
     },
     body: JSON.stringify(product),
   });
-  
+  return response;
 };
+
+export const deleteProductById = async (id) => {
+  
+  const response = await fetch (PRODUCT_URL + id, {
+    method: "DELETE",
+  });
+  return response;
+};
+
